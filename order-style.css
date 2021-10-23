@@ -1,0 +1,320 @@
+body{
+	font-family: "Arial", sans-serif;
+	margin: 0px;
+}
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#nav{
+  display: inline-flex;
+  align-items: center;
+  background-color: #25478E;
+  color: #fff;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*dropdown in navigation bar - links to HAM menu, boar's head, and order page*/
+
+#menu-drop-button{
+  background-color: #25478E;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#menu-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #25478E;
+  border: 2px solid #000;
+}
+
+#menu-drop-content a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#menu-drop-content a:hover{
+  text-decoration: underline;
+}
+
+#menu-drop:hover #menu-drop-content{
+  display: block;
+}
+
+.meal-plans a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*dropdown in navigation bar - links to about metz, sustainability, food pantry, and contact pages 
+on NCF website*/
+
+#about-drop-button{
+  background-color: #25478E;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#about-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #25478E;
+  border: 2px solid #000;
+}
+
+#about-drop-content a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#about-drop-content a:hover{
+  text-decoration: underline;
+}
+
+#about-drop:hover #about-drop-content{
+  display: block;
+}
+
+#ncf-logo{
+  margin-right: 18%;
+  margin-left: 4%;
+}
+
+#menu-extras-container{
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 20px;
+	gap: 20%;
+}
+
+#menu-heading{
+	margin-left: 4%;
+}
+
+.order-directions{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+#menu-buttons{
+	display: inline-flex;
+	gap: 60px;
+	align-items: center;
+	margin-right: 4%;
+}
+
+/*dietary restrictions dropdown button, not able to make selections, but
+ contains 'save' and 'start over' buttons*/
+
+#dietary-drop-button{
+	background-color: #25478E;
+	color: #fff;
+	padding: 0px 10px 0px 10px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+#dietary-restrictions-dropdown button:hover{
+	background-color: #828282;
+}
+
+#dietary-drop-content{
+  display: none;
+  position: absolute;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+/*'save' and 'start over' buttons in dietary dropdown*/
+
+#dietary-buttons{
+	padding: 10px;
+	display: inline-flex;
+	gap: 20px;
+}
+
+#dietary-buttons button{
+	margin-left: 25%;
+	background-color: #25478E;
+	color: #fff;
+	border: 2px solid #000;
+	cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#dietary-buttons button:hover{
+	background-color: #828282;
+}
+
+#dietary-restrictions-dropdown:hover #dietary-drop-content{
+  display: block;
+}
+
+#sign-in-button button{
+	background-color: #25478E;
+	color: #fff;
+	width: 130px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+#sign-in-button button:hover{
+	background-color: #828282;
+}
+
+hr {
+	width: 100%;
+	border-top: 1px solid #000;
+}
+
+#breakfast-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#breakfast-images{
+	display: inline-flex;
+	margin: auto;
+	align-items: center;
+}
+
+#breakfast-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#breakfast-images img{
+	border: 2px solid #000;
+}
+
+#lunch-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#lunch-images{
+	display: inline-flex;
+	margin: auto;
+	align-items: center;
+}
+
+#lunch-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#lunch-images img{
+	border: 2px solid #000;
+}
+
+#dinner-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#dinner-images{
+	display: inline-flex;
+	align-items: center;
+	margin: auto;
+}
+
+#dinner-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#dinner-images img{
+	border: 2px solid #000;
+}
+
+#drinks-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#drink-images{
+	display: inline-flex;
+	align-items: center;
+	margin: auto;
+}
+
+#drink-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#drink-images img{
+	border: 2px solid #000;
+}
+
+#order-heading{
+	width: 100%;
+	background-color: #25478E;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*form used to submit order*/
+
+.order-form{
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.order-form input{
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+/*button used to submit order, when clicked, displays a confirmation message*/
+
+.order-form button{
+	background-color: #25478E;
+	border: 2px solid #000;
+	cursor: pointer;
+	color: #fff;
+	font-size: 15px;
+	padding: 8px;
+	margin-top: 10px;
+}
+
+.order-form button:hover{
+	background-color: #828282;
+}
+
+#footer{
+	width: 100%;
+	display: inline-flex;
+	background-color: #bababa;
+	margin-top: 50px;
+	text-align: center;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+	border-top: 2px solid #000;
+}

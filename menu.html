@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hamilton Center Menu</title>
+	<link rel="stylesheet" href="menu-style.css">
+</head>
+<body>
+	<div id="container">
+
+
+<!--navigation bar - contains logo, home, menus & ordering, and about-->
+
+		 <div id="nav">
+            <div id="ncf-logo">
+                <a href="index.html"><img src="images/ncf-logo.png" width="160px" height="50px"></a>
+            </div>
+                <span class="home"><a href="index.html">Home</a></span>
+
+
+<!--within navigation bar, this is a dropdown menu with links to HAM menu page, boars head, and order page-->
+
+                <div id="menu-drop">
+                    <button id="menu-drop-button">
+                        Menus & Ordering
+                    </button>
+                    <div id="menu-drop-content">
+                        <a href="menu.html">Weekly HAM Menu</a>
+                        <a href="boars-head.html">Boar's Head Menu</a>
+                        <a href="order.html">Order Online</a>
+                    </div>
+                </div>
+
+                <span class="meal-plans">
+                    <a href="https://www.ncf.edu/campus-life/dining/" target="_blank">Meal Plans</a>
+                </span>
+
+
+<!--within naivigation bar, this is an 'about' dropdown menu with four links to other NCF pages-->
+
+                <div id="about-drop">
+                    <button id="about-drop-button">
+                        About
+                    </button>
+                    <div id="about-drop-content">
+                        <a href="https://www.metznewcollege.com/dining-with-us.html" target="_blank">About Metz</a>
+                        <a href="https://www.metznewcollege.com/sustainability.html" target="_blank">Sustainability</a>
+                        <a href="https://www.ncf.edu/campus-life/health-safety-and-wellness-mind-body-and-spirit/food-pantry/"
+                        target="_blank">Food Pantry</a>
+                        <a href="https://www.metznewcollege.com/contact.html" target="_blank">Contact</a>
+                    </div>
+                </div>
+        </div>
+
+
+<!--this container holds heading and three buttons at top of the menu, made it for spacing purposes-->
+
+		<div id="menu-extras-container">
+
+
+<!--menu heading, contains date and dropdown for tomorrow's menu-->
+
+			<div id="menu-heading">
+				<h2>Menu for
+
+
+<!--shows the current date, and is a dropdown that can be used to access tomorrow's menu-->
+					<div id="dates-drop">
+						<button id="dates-drop-button">
+							Today
+						</button>
+					<div id="dates-drop-content">
+						<a href="tomorrow-menu.html" class="date">Tomorrow</a>
+					</div>
+				</h2>
+			</div>
+
+
+<!--this container holds the 3 buttons at top of menu page, made it for spacing purposes-->
+
+			<div id="menu-buttons">
+
+
+<!--dietary restrictions dropdown button, not able to make selections, but
+ contains 'save' and 'start over' buttons-->
+
+				<div id="dietary-restrictions-dropdown">
+					<button id="dietary-drop-button" type="button">
+						<h3>Dietary Restrictions</h3>
+					</button>
+					<div id="dietary-drop-content">
+						<div>
+							<img src="images/dietary-dropdown.jpg" height="355" width="310"> <br>
+							<div id="dietary-buttons">
+								<button type="button">Save</button>
+								<button type="button">Start over</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+<!--sign in button, will direct to a page when clicked that allows you to sign in/sign up-->
+
+				<div id="sign-in-button">
+					<a href="signin.html"><button type="button"><h3>Sign in</h3></button></a>
+				</div>
+
+
+<!--order button, will take you to order online page-->
+
+				<div id="order-button">
+					<a href="order.html"><button type="button"><h3>Order</h3></a></button>
+				</div>
+
+			</div>
+
+		</div>
+
+		<hr>
+
+
+<!--heading for breakfast items-->
+
+		<div id="breakfast-heading">
+			<h2>Breakfast</h2>
+		</div>
+
+
+<!--breakfast images and captions, and when hovered over, shows the calories and nutritional info-->
+
+		<div id="breakfast-images">
+			<figure>
+				<img src="images/waffle.jpg" id="waffles" width="330px" height="230px" onmouseover="newPicture1()" 
+				onmouseout="oldPicture1()">
+				<br>
+				<figcaption>Waffles</figcaption>
+			</figure>
+			<figure>
+				<img src="images/pancakes.jpg" id="pancakes" width="330px" height="230px" onmouseover="newPicture2()" 
+				onmouseout="oldPicture2()">
+				<br>
+				<figcaption>Pancakes</figcaption>
+			</figure>
+			<figure>
+				<img src="images/omelet.jpg" id="omelet" width="330px" height="230px" onmouseover="newPicture3()" 
+				onmouseout="oldPicture3()">
+				<br>
+				<figcaption>Omelet</figcaption>
+			</figure>
+		</div>
+
+		<hr>
+
+
+<!--lunch heading-->
+
+		<div id="lunch-heading">
+			<h2>Lunch</h2>
+		</div>
+
+
+<!--lunch images and captions, and when hovered over, shows the calories and nutritional info-->
+
+		<div id="lunch-images">
+			<figure>
+				<img src="images/hamburger.jpg" id="hamburger" width="330px" height="230px" onmouseover="newPicture4()" 
+				onmouseout="oldPicture4()">
+				<br>
+				<figcaption>Hamburgers</figcaption>
+			</figure>
+			<figure>
+				<img src="images/pizza.jpg" id="pizza" width="330px" height="230px" onmouseover="newPicture5()" 
+				onmouseout="oldPicture5()">
+				<br>
+				<figcaption>Cheese Pizza</figcaption>
+			</figure>
+			<figure>
+				<img src="images/fries.jpg" id="fries" width="330px" height="230px" onmouseover="newPicture6()" 
+				onmouseout="oldPicture6()">
+				<br>
+				<figcaption>Fries</figcaption>
+			</figure>
+		</div>
+
+		<hr>
+
+
+<!--dinner heading-->
+
+		<div id="dinner-heading">
+			<h2>Dinner</h2>
+		</div>
+
+
+<!--dinner images and captions, and when hovered over, shows the calories and nutritional info-->
+
+		<div id="dinner-images">
+			<figure>
+				<img src="images/salad.jpg" id="salad" width="330px" height="230px" onmouseover="newPicture7()" 
+				onmouseout="oldPicture7()">
+				<br>
+				<figcaption>Salad</figcaption>
+			</figure>
+			<figure>
+				<img src="images/burrito.jpg" id="burritos" width="330px" height="230px" onmouseover="newPicture8()" 
+				onmouseout="oldPicture8()">
+				<br>
+				<figcaption>Burritos</figcaption>
+			</figure>
+			<figure>
+				<img src="images/mac-n-cheese.jpg" id="mac-n-cheese" width="330px" height="230px" onmouseover="newPicture9()" 
+				onmouseout="oldPicture9()">
+				<br>
+				<figcaption>Mac 'n Cheese</figcaption>
+			</figure>
+		</div>
+
+
+<!--feedback heading, below is form that allows user to fill out feedback form for Metz-->
+
+		<div id="feedback-heading">
+			<h3>Any Feedback?</h3>
+		</div>
+
+
+<!--Metz feedback form, is a textbox that allows user to give feedback to Metz-->
+
+		<form id="feedback">
+			<p>Do you have any feedback about your Metz dining experience?</p>
+			<textarea name="comments" cols="40" rows="5">Provide your comments...</textarea>
+		</form>
+
+
+<!--feedback submit button. when pressed, it says 'thank you for your feedback'-->
+		
+		<div id="submit-feedback">
+            <button type="button" onclick="feedbackFunction()">Submit</button>
+        </div>
+
+
+
+<!--footer with Metz logo, team name, and facebook icon that links to Metz' facebook page-->
+
+		<div id="footer">
+			<p><img src="images/metz-logo.png" width="150px" height="50px"></p>
+			<p><a href="https://www.facebook.com/newcollegedining/" target="_blank">
+				<img src="images/facebook-icon.png" width="40px" height="40px"/></a></p>
+			<p>Check out Metz on Facebook!</p>
+			<p>Website by: Team Blue Monday</p>
+		</div>
+
+	</div>
+	<script src="menu.js"></script>
+	<script src="sign-in.js"></script>
+</body>
+

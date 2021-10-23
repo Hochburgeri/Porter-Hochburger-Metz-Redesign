@@ -1,0 +1,372 @@
+body{
+	font-family: "Arial", sans-serif;
+	margin: 0px;
+}
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#nav{
+  display: inline-flex;
+  align-items: center;
+  background-color: #25478E;
+  color: #fff;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*dropdown in navigation bar - links to HAM menu, boar's head, and order page*/
+
+#menu-drop-button{
+  background-color: #25478E;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#menu-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #25478E;
+  border: 2px solid #000;
+}
+
+#menu-drop-content a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#menu-drop-content a:hover{
+  text-decoration: underline;
+}
+
+#menu-drop:hover #menu-drop-content{
+  display: block;
+}
+
+
+.meal-plans a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/*dropdown in navigation bar - links to about metz, sustainability, food pantry, and contact pages 
+on NCF website*/
+
+#about-drop-button{
+  background-color: #25478E;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#about-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #25478E;
+  border: 2px solid #000;
+}
+
+#about-drop-content a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#about-drop-content a:hover{
+  text-decoration: underline;
+}
+
+#about-drop:hover #about-drop-content{
+  display: block;
+}
+
+#ncf-logo{
+  margin-right: 18%;
+  margin-left: 4%;
+}
+
+#menu-extras-container{
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	gap: 20%;
+}
+
+#menu-heading{
+	margin-left: 4%;
+}
+
+#menu-heading h2{
+	display: inline-flex;
+}
+
+/*dropdown at top of menu page, allows user to view either today or tomorrow's menu*/
+
+#dates-drop-button{
+	background-color: #fff;
+	border: none;
+	text-decoration: underline;
+	color: #000;
+	font-weight: bold;
+	font-size: 24px;
+	padding: none;
+}
+
+/*same as previous, but used for 'tomorrow's menu page*/
+
+#dates-drop-button2{
+	background-color: #fff;
+	border: none;
+	text-decoration: underline;
+	color: #000;
+	font-weight: bold;
+	font-size: 24px;
+	padding: none;
+}
+
+#dates-drop-content{
+	display: none;
+	position: absolute;
+	width: 150px;
+	background-color: #25478E;
+	border: 2px solid #000;
+}
+
+#dates-drop-content a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+}
+
+#dates-drop-content a:hover{
+	text-decoration: underline;
+}
+
+#dates-drop:hover #dates-drop-content{
+	display: block;
+}
+
+#menu-buttons{
+	display: inline-flex;
+	gap: 60px;
+	align-items: center;
+	margin-right: 3%;
+}
+
+/*dietary restrictions dropdown button, not able to make selections, but
+ contains 'save' and 'start over' buttons*/
+
+#dietary-drop-button{
+	background-color: #25478E;
+	color: #fff;
+	padding: 0px 10px 0px 10px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+#dietary-restrictions-dropdown button:hover{
+	background-color: #828282;
+}
+
+#dietary-drop-content{
+  display: none;
+  position: absolute;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+/*'save' and 'start over' buttons in dietary dropdown*/
+
+#dietary-buttons{
+	padding: 10px;
+	display: inline-flex;
+	gap: 20px;
+}
+
+#dietary-buttons button{
+	margin-left: 25%;
+	background-color: #25478E;
+	color: #fff;
+	border: 2px solid #000;
+	cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#dietary-buttons button:hover{
+	background-color: #828282;
+}
+
+#dietary-restrictions-dropdown:hover #dietary-drop-content{
+  display: block;
+}
+
+#sign-in-button button{
+	background-color: #25478E;
+	color: #fff;
+	width: 130px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+#sign-in-button button:hover{
+	background-color: #828282;
+}
+
+#order-button button{
+	width: 100px;
+	background-color: #25478E;
+	border: 2px solid #000;
+}
+
+#order-button button:hover{
+	background-color: #828282;
+}
+
+#order-button a{
+	color: #fff;
+	text-decoration: none;
+}
+
+hr{
+	width: 100%;
+	border-top: 1px solid #000;
+}
+
+#breakfast-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#breakfast-images{
+	display: inline-flex;
+	margin: auto;
+	align-items: center;
+}
+
+#breakfast-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#breakfast-images img{
+	border: 2px solid #000;
+}
+
+#lunch-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#lunch-images{
+	display: inline-flex;
+	margin: auto;
+	align-items: center;
+}
+
+#lunch-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#lunch-images img{
+	border: 2px solid #000;
+}
+
+#dinner-heading{
+	width: 100%;
+	text-align: center;
+}
+
+#dinner-images{
+	display: inline-flex;
+	align-items: center;
+	margin: auto;
+}
+
+#dinner-images figcaption{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#dinner-images img{
+	border: 2px solid #000;
+}
+
+#feedback-heading{
+	width: 100%;
+	margin-top: 35px;
+	background-color: #25478E;
+	color: #fff;
+	text-align: center;
+}
+
+/*feedback form*/
+
+#feedback{
+	margin: 20px auto;
+	gap: 30px;
+	text-align: center;
+}
+
+#submit-feedback{
+	width: 100%;
+	text-align: center;
+}
+
+/*button to submit feedback, says 'thank you for your feedback' when clicked*/
+
+#submit-feedback button{
+	background-color: #25478E;
+	color: #fff;
+	padding: 8px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+#submit-feedback button:hover{
+	background-color: #828282;
+}
+
+#footer{
+	width: 100%;
+	display: inline-flex;
+	background-color: #bababa;
+	margin-top: 30px;
+	text-align: center;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+	border-top: 2px solid #000;
+}
+
+
+
+
+
+
+

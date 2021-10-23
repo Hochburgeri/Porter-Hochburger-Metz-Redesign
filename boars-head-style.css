@@ -1,0 +1,160 @@
+body, html{
+   font-family: "Arial", sans-serif;
+   margin: 0px;
+   padding: 0px;
+ }
+
+ #nav{
+  display: inline-flex;
+  align-items: center;
+  background-color: #25478E;
+  color: #fff;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu-drop-button{
+  background-color: #25478E;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#menu-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #25478E;
+  border: 2px solid #000;
+}
+
+#menu-drop-content a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#menu-drop-content a:hover{
+  text-decoration: underline;
+}
+
+#menu-drop:hover #menu-drop-content{
+  display: block;
+}
+
+.meal-plans a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#about-drop-button{
+  background-color: #25478E;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#about-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #25478E;
+  border: 2px solid #000;
+}
+
+#about-drop-content a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#about-drop-content a:hover{
+  text-decoration: underline;
+}
+
+#about-drop:hover #about-drop-content{
+  display: block;
+}
+
+#ncf-logo{
+  margin-right: 18%;
+  margin-left: 4%;
+}
+ hr{
+  border-top: 1px solid black;
+ }
+
+ table {
+   font-family: arial, sans-serif;
+   font-size: 1em;
+   font-weight: normal;
+   border-collapse: collapse;
+   justify-content: center;
+   width: 92%;
+   height: 330px;
+   border: 3px solid #25478E ;
+   margin: auto;
+   margin-bottom: 30px;
+   color: #25478E;
+ }
+  td, th {
+   border: 1px solid #25478E;
+   text-align: left;
+   padding: 8px;
+ }
+  tr:nth-child(1) {
+   background-color: #25478E;
+ }
+  .quick th {
+   color: white;
+ }
+
+ .sandwich, .flatbread th {
+   color: white;
+ }
+
+ #title {
+     text-align: center;
+     padding-top: 20px;
+ }
+
+ #offer {
+     text-align: left;
+     color: black;
+     margin-left: 4%;
+     margin-top: 25px;
+ }
+
+ .also {
+   font-family: arial, sans-serif;
+   font-weight: bold;
+   border-collapse: collapse;
+   justify-content: center;
+   width: 60%;
+   border: 3px solid #25478E;
+   margin: auto;
+   margin-top: 30px;
+   color: black;
+   text-align: center;
+ }
+
+#footer{
+  width: 100%;
+  display: inline-flex;
+  background-color: #bababa;
+  margin-top: 30px;
+  text-align: center;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #000;
+}
+

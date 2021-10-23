@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Online</title>
+	<link rel="stylesheet" href="order-style.css">
+</head>
+<body>
+	<div id="container">
+
+
+<!--navigation bar - contains logo, home, menus & ordering, and about-->
+
+		<div id="nav">
+            <div id="ncf-logo">
+                <a href="index.html"><img src="images/ncf-logo.png" width="160px" height="50px"></a>
+            </div>
+                <span class="home"><a href="index.html">Home</a></span>
+
+
+<!--within navigation bar, this is a dropdown menu with links to HAM menu page, boars head, and order page-->
+
+                <div id="menu-drop">
+                    <button id="menu-drop-button">
+                        Menus & Ordering
+                    </button>
+                    <div id="menu-drop-content">
+                        <a href="menu.html">Weekly HAM Menu</a>
+                        <a href="boars-head.html">Boar's Head Menu</a>
+                        <a href="order.html">Order Online</a>
+                    </div>
+                </div>
+                <span class="meal-plans">
+                    <a href="https://www.ncf.edu/campus-life/dining/" target="_blank">Meal Plans</a>
+                </span>
+
+
+<!--within naivigation bar, this is an 'about' dropdown menu with four links to other NCF pages-->
+
+                <div id="about-drop">
+                    <button id="about-drop-button">
+                        About
+                    </button>
+                    <div id="about-drop-content">
+                        <a href="https://www.metznewcollege.com/dining-with-us.html" target="_blank">About Metz</a>
+                        <a href="https://www.metznewcollege.com/sustainability.html" target="_blank">Sustainability</a>
+                        <a href="https://www.ncf.edu/campus-life/health-safety-and-wellness-mind-body-and-spirit/food-pantry/"
+                        target="_blank">Food Pantry</a>
+                        <a href="https://www.metznewcollege.com/contact.html" target="_blank">Contact</a>
+                    </div>
+                </div>
+        </div>
+
+<!--this container holds heading and three buttons at top of the menu, made it for spacing purposes-->
+
+		<div id="menu-extras-container">
+
+
+<!--menu heading, contains date and dropdown for tomorrow's menu-->
+
+			<div id="menu-heading">
+				<h2>Online Order Menu</h2>
+				<h3>Choose up to 3 items and fill out the form below</h3>
+			</div>
+
+
+<!--this container holds the 2 buttons at top of menu page, made it for spacing purposes-->
+
+			<div id="menu-buttons">
+
+
+<!--dietary restrictions dropdown button, not able to make selections, but
+ contains 'save' and 'start over' buttons-->
+
+				<div id="dietary-restrictions-dropdown">
+					<button id="dietary-drop-button" type="button">
+						<h3>Dietary Restrictions</h3>
+					</button>
+					<div id="dietary-drop-content">
+						<div>
+							<img src="images/dietary-dropdown.jpg" height="355" width="310"> <br>
+							<div id="dietary-buttons">
+								<button type="button">Save</button>
+								<button type="button">Start over</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+<!--sign in button, will direct to a page when clicked that allows you to sign in/sign up-->
+
+				<div id="sign-in-button">
+					<a href="signin.html"><button type="button"><h3>Sign in</h3></button></a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<hr>
+
+
+<!--heading for breakfast items-->
+
+		<div id="breakfast-heading">
+			<h2>Breakfast</h2>
+		</div>
+
+
+<!--breakfast images and captions, and when hovered over, shows the calories and nutritional info. 
+below them is a checkbox, which would be used to make selections for an order-->
+
+		<div id="breakfast-images">
+			<figure>
+				<img src="images/waffle.jpg" id="waffles" width="330px" height="230px" onmouseover="newPicture1()" 
+				onmouseout="oldPicture1()">
+				<br>
+				<figcaption>Waffles
+					<input type="checkbox" id="waffles" value="waffles">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/pancakes.jpg" id="pancakes" width="330px" height="230px" onmouseover="newPicture2()" 
+				onmouseout="oldPicture2()">
+				<br>
+				<figcaption>Pancakes
+					<input type="checkbox" id="pancakes" value="pancakes">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/omelet.jpg" id="omelet" width="330px" height="230px" onmouseover="newPicture3()" 
+				onmouseout="oldPicture3()">
+				<br>
+				<figcaption>Omelet
+					<input type="checkbox" id="omelet" value="omelet">
+				</figcaption>
+			</figure>
+		</div>
+
+		<hr>
+
+
+<!--lunch heading-->
+
+		<div id="lunch-heading">
+			<h2>Lunch</h2>
+		</div>
+
+
+<!--lunch images and captions, and when hovered over, shows the calories and nutritional info.
+below them is a checkbox, which would be used to make selections for an order-->
+
+		<div id="lunch-images">
+			<figure>
+				<img src="images/hamburger.jpg" id="hamburger" width="330px" height="230px" onmouseover="newPicture4()" 
+				onmouseout="oldPicture4()">
+				<br>
+				<figcaption>Hamburgers
+					<input type="checkbox" id="hamburgers" value="hamburgers">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/pizza.jpg" id="pizza" width="330px" height="230px" onmouseover="newPicture5()" 
+				onmouseout="oldPicture5()">
+				<br>
+				<figcaption>Cheese Pizza
+					<input type="checkbox" id="pizza" value="pizza">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/fries.jpg" id="fries" width="330px" height="230px" onmouseover="newPicture6()" 
+				onmouseout="oldPicture6()">
+				<br>
+				<figcaption>Fries
+					<input type="checkbox" id="fries" value="fries">
+				</figcaption>
+			</figure>
+		</div>
+
+		<hr>
+
+
+<!--dinner heading-->
+
+		<div id="dinner-heading">
+			<h2>Dinner</h2>
+		</div>
+
+
+<!--dinner images and captions, and when hovered over, shows the calories and nutritional info.
+below them is a checkbox, which would be used to make selections for an order-->
+
+		<div id="dinner-images">
+			<figure>
+				<img src="images/salad.jpg" id="salad" width="330px" height="230px" onmouseover="newPicture7()" 
+				onmouseout="oldPicture7()">
+				<br>
+				<figcaption>Salad
+					<input type="checkbox" id="salad" value="salad">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/burrito.jpg" id="burritos" width="330px" height="230px" onmouseover="newPicture8()" 
+				onmouseout="oldPicture8()">
+				<br>
+				<figcaption>Burritos
+					<input type="checkbox" id="burrito" value="burrito">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/mac-n-cheese.jpg" id="mac-n-cheese" width="330px" height="230px" onmouseover="newPicture9()" 
+				onmouseout="oldPicture9()">
+				<br>
+				<figcaption>Mac 'n Cheese
+					<input type="checkbox" id="mac-n-cheese" value="mac-n-cheese">
+				</figcaption>
+			</figure>
+		</div>
+
+		<hr>
+
+
+<!--drinks heading-->
+
+		<div id="drinks-heading">
+			<h2>Drinks</h2>
+		</div>
+
+
+<!--drinks options images and captions. below them is a checkbox, which would be used to make selections
+ for an order-->
+
+		<div id="drink-images">
+			<figure>
+				<img src="images/water.jpg" width="330px" height="230px">
+				<br>
+				<figcaption>Water
+					<input type="checkbox" id="water" value="water">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/orange-juice.jpg" width="330px" height="230px">
+				<br>
+				<figcaption>Orange Juice
+					<input type="checkbox" id="orange-juice" value="orange-juice">
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/milk.jpg" width="330px" height="230px">
+				<br>
+				<figcaption>Milk
+					<input type="checkbox" id="milk" value="milk">
+				</figcaption>
+			</figure>
+		</div>
+
+
+<!--heading for order information, below is the form used to make an order-->
+
+		<div id="order-heading">
+			<h2>Order Information</h2>
+		</div>
+
+
+<!--order form, user fills out name, email, ncf id #, and enters the time they want to pick
+up their order-->
+
+		<div class="order-form">
+           <form>
+               <p>First name:
+               <input type="text" id="fname" name="fname">
+               Last name:
+               <input type="text" id="lname" name="lname"></p>
+               <p>NCF e-mail:
+               <input type="text" id="email" name="email">
+               NCF ID Number:
+               <input type="" id="id-number" name="id-number">
+               <p>Approximate Time of Pickup:</p>
+               <input type="" id="pickup" name="pickup">
+             </form>
+             <section id="confirmation"></section>
+
+
+ <!--button used to submit order, when clicked, displays a confirmation message-->
+			<button onclick="changeText()">Order</button>
+		</div>
+
+
+
+<!--footer with Metz logo, team name, and facebook icon that links to Metz' facebook page-->
+
+		<div id="footer">
+			<p><img src="images/metz-logo.png" width="150px" height="50px"></p>
+			<p><a href="https://www.facebook.com/newcollegedining/" target="_blank">
+				<img src="images/facebook-icon.png" width="40px" height="40px"/></a></p>
+			<p>Check out Metz on Facebook!</p>
+			<p>Website by: Team Blue Monday</p>
+		</div>
+
+	</div>
+	<script src="menu.js"></script>
+	<script src="sign-in.js"></script>
+</body>
